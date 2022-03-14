@@ -97,7 +97,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/03/14/name/" data-id="cl0qbd9mp0001p0urb8una5g8" data-title="name" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/03/14/name/" data-id="cl0qcccsu0002rsur9b2idjy4" data-title="name" class="article-share-link">Share</a>
       
       
       
@@ -148,7 +148,170 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/03/13/hello-world/" data-id="cl0q9tfu3000078urenf10zu9" data-title="Hello World" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/03/13/hello-world/" data-id="cl0qcccsw0003rsurd5dwhz5b" data-title="Hello World" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-试题 F 特别数的和" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/03/11/%E8%AF%95%E9%A2%98%20F%20%E7%89%B9%E5%88%AB%E6%95%B0%E7%9A%84%E5%92%8C/" class="article-date">
+  <time class="dt-published" datetime="2022-03-11T07:09:47.735Z" itemprop="datePublished">2022-03-11</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>试题 F: 特别数的和 </p>
+<p> 【问题描述】 小明对数位中含有 2、0、1、9 的数字很感兴趣（不包括前导 0），在 1 到 40 中这样的数包括 1、2、9、10 至 32、39 和 40，共 28 个，他们的和是 574。 请问，在 1 到 n 中，所有这样的数的和是多少？</p>
+<p> 【输入格式】 输入一行包含两个整数 n。</p>
+<p> 【输出格式】 输出一行，包含一个整数，表示满足条件的数的和。</p>
+<p> 【样例输入】 40 【样例输出】 574 </p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">judge</span><span class="params">(<span class="type">int</span> n)</span></span>&#123;</span><br><span class="line">	<span class="type">int</span> flag=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">while</span>(n&gt;<span class="number">0</span>)&#123;</span><br><span class="line">		<span class="keyword">if</span>(n%<span class="number">10</span>==<span class="number">2</span>||n%<span class="number">10</span>==<span class="number">0</span>||n%<span class="number">10</span>==<span class="number">1</span>||n%<span class="number">10</span>==<span class="number">9</span>)&#123;</span><br><span class="line">			flag=<span class="number">1</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		n=n/<span class="number">10</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> flag;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="type">int</span> sum=<span class="number">0</span>;</span><br><span class="line">	<span class="type">int</span> n=<span class="number">0</span>;</span><br><span class="line">	cin&gt;&gt;n;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">    	<span class="keyword">if</span>(<span class="built_in">judge</span>(i)==<span class="number">1</span>)&#123;</span><br><span class="line">    		sum=sum+i;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	cout&lt;&lt;sum;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/03/11/%E8%AF%95%E9%A2%98%20F%20%E7%89%B9%E5%88%AB%E6%95%B0%E7%9A%84%E5%92%8C/" data-id="cl0qcccsx0005rsur5spx8gt1" data-title="" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-3月10日编程题" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/03/10/3%E6%9C%8810%E6%97%A5%E7%BC%96%E7%A8%8B%E9%A2%98/" class="article-date">
+  <time class="dt-published" datetime="2022-03-10T11:08:26.278Z" itemprop="datePublished">2022-03-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="3月10日编程题"><a href="#3月10日编程题" class="headerlink" title="3月10日编程题"></a>3月10日编程题</h1><h1 id="第一场"><a href="#第一场" class="headerlink" title="第一场"></a>第一场</h1><p>电费：50°以下收多少钱，超过50°收多少钱，输入电费，计算</p>
+<p>这个题他没给具体的怎么算，还是老规矩if </p>
+<p>输入字符串和字符，字长度不超过80，判断字符在字符中串中有几个相等的。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># <span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta"># <span class="keyword">include</span> <span class="string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span>&#123;</span><br><span class="line">	<span class="type">char</span> a[<span class="number">80</span>],b,i,num=<span class="number">0</span>;</span><br><span class="line">	gets(a);</span><br><span class="line">	b=getchar();</span><br><span class="line">	<span class="keyword">for</span>(i=<span class="number">0</span>;a[i]!=<span class="string">&#x27;\0&#x27;</span>;i++)&#123;</span><br><span class="line">		<span class="keyword">if</span>(a[i]==b)&#123;</span><br><span class="line">			num++;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,num);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>一样的道理，去找有几个相等的，循环什么时候结束，到字符串结尾，也就是\0的时候我们结束。</p>
+<h1 id="第二场"><a href="#第二场" class="headerlink" title="第二场"></a>第二场</h1><p>求圆的面积</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># <span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span>&#123;</span><br><span class="line">	<span class="type">int</span>  r;</span><br><span class="line">	<span class="type">float</span> s;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;r);</span><br><span class="line">	<span class="keyword">if</span>(r&lt;<span class="number">0</span>)&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;输入错误&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span>&#123;</span><br><span class="line">		s=r*r*<span class="number">3.14</span>;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;圆的面积为%f&quot;</span>,s);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>2。一个长度为5的字符串，然后输入一个字符，返回他在这个字符串中第一次出现的下标</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># <span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta"># <span class="keyword">include</span> <span class="string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span>&#123;</span><br><span class="line">	<span class="type">char</span> a[<span class="number">5</span>],b,i;</span><br><span class="line">	gets(a);</span><br><span class="line"><span class="comment">//	b=getchar();</span></span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%c&quot;</span>,&amp;b);</span><br><span class="line">	<span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;<span class="number">5</span>;i++)&#123;</span><br><span class="line">		<span class="keyword">if</span>(a[i]==b)&#123;</span><br><span class="line">			<span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,i);<span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="第三场"><a href="#第三场" class="headerlink" title="第三场"></a>第三场</h1><p>1.第一题题目不全，做不了</p>
+<p>2.输入数组，判断数组中有几个字母，几个数字，几个其他字符。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># <span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span>&#123;</span><br><span class="line">	<span class="type">char</span> a[<span class="number">80</span>];</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;please input your string\n&quot;</span>);</span><br><span class="line">	gets(a);</span><br><span class="line">	<span class="type">int</span> num1=<span class="number">0</span>,num2=<span class="number">0</span>,num3=<span class="number">0</span>,i;</span><br><span class="line">	<span class="keyword">for</span>(i=<span class="number">0</span>;a[i]!=<span class="string">&#x27;\0&#x27;</span>;i++)&#123;</span><br><span class="line">		<span class="keyword">if</span>(a[i]&gt;=<span class="string">&#x27;a&#x27;</span>&amp;&amp;a[i]&lt;=<span class="string">&#x27;z&#x27;</span>)&#123;</span><br><span class="line">			num1++;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span>(a[i]&gt;=<span class="string">&#x27;A&#x27;</span>&amp;&amp;a[i]&lt;=<span class="string">&#x27;Z&#x27;</span>)&#123;</span><br><span class="line">			num1++;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span>(a[i]&gt;=<span class="string">&#x27;0&#x27;</span>&amp;&amp;a[i]&lt;=<span class="string">&#x27;9&#x27;</span>)&#123;</span><br><span class="line">			num2++;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span>&#123;</span><br><span class="line">			num3++;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%d\n%d\n%d\n&quot;</span>,num1,num2,num3);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="第4场"><a href="#第4场" class="headerlink" title="第4场"></a><strong>第4场</strong></h1><p>第一题，首先输入a和b的值，再输入一个字符，如果是＋我们输出</p>
+<p>a+b的值，如果不是+，我们输出a,b对应的值</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># <span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span>&#123;</span><br><span class="line">	<span class="type">int</span> a,b;</span><br><span class="line">	<span class="type">char</span> c;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;请输入两个数字&quot;</span>);</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%d%d&quot;</span>,&amp;a,&amp;b);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;请输入一个字符&quot;</span>);</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%s&quot;</span>,&amp;c);</span><br><span class="line">	<span class="keyword">if</span>(c==<span class="string">&#x27;+&#x27;</span>)&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;a+b=%d&quot;</span>,a+b);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span>&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;a=%db=%d&quot;</span>,a,b);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>第二题</p>
+<p>输入7个分数，去掉最高，去掉最低，求平均值</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;	<span class="type">int</span> i,a[<span class="number">10</span>];</span><br><span class="line">	<span class="type">float</span> sum=<span class="number">0</span>,avg,max,min;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;请输入7个分数:&quot;</span>);</span><br><span class="line">	<span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;<span class="number">10</span>;i++)</span><br><span class="line">	    &#123;</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;a[i]);</span><br><span class="line">	    sum+=a[i];</span><br><span class="line">		&#125;</span><br><span class="line">		max=a[<span class="number">9</span>],min=a[<span class="number">0</span>];</span><br><span class="line">		<span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;<span class="number">10</span>;i++)</span><br><span class="line">		&#123;  <span class="keyword">if</span>(a[i]&gt;max)</span><br><span class="line">		    max=a[i];</span><br><span class="line">		  <span class="keyword">if</span>(a[i]&lt;min)</span><br><span class="line">		    min=a[i];</span><br><span class="line">		&#125;</span><br><span class="line">    avg=(sum-max-min)/<span class="number">8</span>;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;avg is :%f&quot;</span>,avg);</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/03/10/3%E6%9C%8810%E6%97%A5%E7%BC%96%E7%A8%8B%E9%A2%98/" data-id="cl0qcccsr0001rsurea20boew" data-title="" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-第一场编程题" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/03/10/%E7%AC%AC%E4%B8%80%E5%9C%BA%E7%BC%96%E7%A8%8B%E9%A2%98/" class="article-date">
+  <time class="dt-published" datetime="2022-03-10T04:40:01.290Z" itemprop="datePublished">2022-03-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="3-9第一场编程题"><a href="#3-9第一场编程题" class="headerlink" title="3.9第一场编程题"></a>3.9第一场编程题</h1><h2 id="1-实现分段函数，x-gt-3-y-x3D-x方-1-x-lt-x3D-3时，y-x3D-x"><a href="#1-实现分段函数，x-gt-3-y-x3D-x方-1-x-lt-x3D-3时，y-x3D-x" class="headerlink" title="1.实现分段函数，x&gt;-3,y&#x3D;x方-1,x&lt;&#x3D;-3时，y&#x3D;x"></a>1.实现分段函数，x&gt;-3,y&#x3D;x方-1,x&lt;&#x3D;-3时，y&#x3D;x</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># <span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span>&#123;</span><br><span class="line">	<span class="type">int</span> x,y;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;请输入x的值\n&quot;</span>);</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;x);</span><br><span class="line">	<span class="keyword">if</span>(x&gt;<span class="number">-3</span>)&#123;</span><br><span class="line">		y=x*x<span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span>&#123;</span><br><span class="line">		y=x;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;y=%d&quot;</span>,y);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-手机号规则，输入80个字符的字符串，查看是否符合手机号规则。规则：第一个号码必须为1，是11位，其他号码必须是1-9之间，不能是其他字符，如果符合以上规则，则输出“符合手机号规则”，否则，则输出“不符合手机号规则”"><a href="#2-手机号规则，输入80个字符的字符串，查看是否符合手机号规则。规则：第一个号码必须为1，是11位，其他号码必须是1-9之间，不能是其他字符，如果符合以上规则，则输出“符合手机号规则”，否则，则输出“不符合手机号规则”" class="headerlink" title="2.手机号规则，输入80个字符的字符串，查看是否符合手机号规则。规则：第一个号码必须为1，是11位，其他号码必须是1-9之间，不能是其他字符，如果符合以上规则，则输出“符合手机号规则”，否则，则输出“不符合手机号规则”"></a>2.手机号规则，输入80个字符的字符串，查看是否符合手机号规则。规则：第一个号码必须为1，是11位，其他号码必须是1-9之间，不能是其他字符，如果符合以上规则，则输出“符合手机号规则”，否则，则输出“不符合手机号规则”</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># <span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span>&#123;</span><br><span class="line">	<span class="type">char</span> a[<span class="number">80</span>],i,flag=<span class="number">0</span>;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;请输入手机号&quot;</span>);</span><br><span class="line">	gets(a);</span><br><span class="line">	<span class="keyword">if</span>(a[<span class="number">0</span>]==<span class="string">&#x27;1&#x27;</span>&amp;&amp;<span class="built_in">strlen</span>(a)==<span class="number">11</span>)&#123;</span><br><span class="line">		<span class="keyword">for</span>(i=<span class="number">1</span>;i&lt;<span class="number">11</span>;i++)&#123;</span><br><span class="line">			<span class="keyword">if</span>(a[i]&gt;=<span class="string">&#x27;1&#x27;</span>&amp;&amp;a[i]&lt;=<span class="string">&#x27;9&#x27;</span>)&#123;</span><br><span class="line">			flag=<span class="number">1</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">else</span>&#123;</span><br><span class="line">				flag=<span class="number">0</span>;<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;	</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">if</span>(flag==<span class="number">1</span>)&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;是合法的手机号&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span> <span class="keyword">if</span>(flag==<span class="number">0</span>)&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;不是合法的手机号&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>我这里定义了一个flag变量，当我满足的时候，我验证第2位到第11位号码，满足我让flag为1，其他也就是flag为0，这个时候非法，我们要跳出去，如果不跳的话，我们在循环的下一次满足的时候又会把她覆盖掉变为1，，最后我来判断一下，当flag为0，不满足，flag为1,满足</p>
+<h1 id="3-9第二场编程题"><a href="#3-9第二场编程题" class="headerlink" title="3.9第二场编程题"></a>3.9第二场编程题</h1><h2 id="1-ascll码转换，例如A转a-a转A"><a href="#1-ascll码转换，例如A转a-a转A" class="headerlink" title="1.ascll码转换，例如A转a,a转A"></a>1.ascll码转换，例如A转a,a转A</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;   <span class="type">char</span> c;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;请输入一个字母\n&quot;</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%c&quot;</span>,&amp;c);  </span><br><span class="line">    <span class="keyword">if</span>(c&gt;=<span class="string">&#x27;a&#x27;</span>&amp;&amp;c&lt;=<span class="string">&#x27;z&#x27;</span>)&#123;</span><br><span class="line">	  c=c<span class="number">-32</span>;</span><br><span class="line">	  &#125;</span><br><span class="line">	<span class="keyword">else</span> <span class="keyword">if</span>(c&gt;=<span class="string">&#x27;A&#x27;</span>&amp;&amp;c&lt;=<span class="string">&#x27;Z&#x27;</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		c=c+<span class="number">32</span>;</span><br><span class="line">	&#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;转换后的字母是%c&quot;</span>,c);</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-在一维数组中有一组数据，例如：a-10-x3D-1-3-4-6-4…-输入一个数，看是否在这个一维数组中，如果在数组中，输出这个数字出现的次数。"><a href="#2-在一维数组中有一组数据，例如：a-10-x3D-1-3-4-6-4…-输入一个数，看是否在这个一维数组中，如果在数组中，输出这个数字出现的次数。" class="headerlink" title="2.在一维数组中有一组数据，例如：a[10]&#x3D;{1,3,4,6,4…},输入一个数，看是否在这个一维数组中，如果在数组中，输出这个数字出现的次数。"></a>2.在一维数组中有一组数据，例如：a[10]&#x3D;{1,3,4,6,4…},输入一个数，看是否在这个一维数组中，如果在数组中，输出这个数字出现的次数。</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># <span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span>&#123;</span><br><span class="line">	<span class="type">int</span> shu,num=<span class="number">0</span>,i;</span><br><span class="line">	<span class="type">int</span> a[<span class="number">10</span>]=&#123;<span class="number">1</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">2</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">2</span>,<span class="number">34</span>,<span class="number">3</span>&#125;;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;shu);</span><br><span class="line">	<span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;<span class="number">10</span>;i++)&#123;</span><br><span class="line">		<span class="keyword">if</span>(a[i]==shu)&#123;</span><br><span class="line">			num++;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,num);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="3-9第三场编程题"><a href="#3-9第三场编程题" class="headerlink" title="3.9第三场编程题"></a>3.9第三场编程题</h1><h2 id="输入x和y的值，如果y-x3D-0-输出除数为0，否则输出x-x2F-y-x-y的值"><a href="#输入x和y的值，如果y-x3D-0-输出除数为0，否则输出x-x2F-y-x-y的值" class="headerlink" title="输入x和y的值，如果y&#x3D;0,输出除数为0，否则输出x&#x2F;y,x%y的值"></a>输入x和y的值，如果y&#x3D;0,输出除数为0，否则输出x&#x2F;y,x%y的值</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">int main()&#123;</span><br><span class="line">	int x,y;</span><br><span class="line">	 scanf(&quot;%d%d&quot;,&amp;x,&amp;y);</span><br><span class="line">	 if(y==0)&#123;</span><br><span class="line">	 	printf(&quot;除数为0&quot;);</span><br><span class="line">	 &#125;</span><br><span class="line">	 else &#123;</span><br><span class="line">	 	printf(&quot;%d\n%d\n&quot;,x/y,x%y);</span><br><span class="line">	 &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="第二题：用户名规则：80个字符，如果字符长度小于3，与已有用户名haohao相同则不符合，其余的输出符合"><a href="#第二题：用户名规则：80个字符，如果字符长度小于3，与已有用户名haohao相同则不符合，其余的输出符合" class="headerlink" title="第二题：用户名规则：80个字符，如果字符长度小于3，与已有用户名haohao相同则不符合，其余的输出符合"></a>第二题：用户名规则：80个字符，如果字符长度小于3，与已有用户名haohao相同则不符合，其余的输出符合</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span>&#123;</span><br><span class="line">	<span class="type">char</span> a[<span class="number">80</span>];</span><br><span class="line">	gets(a);</span><br><span class="line">	<span class="keyword">if</span>(<span class="built_in">strlen</span>(a)&lt;<span class="number">3</span>&amp;&amp;<span class="built_in">strcmp</span>(a,<span class="string">&quot;haohao&quot;</span>)!=<span class="number">0</span>)&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;yes&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span> &#123;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;no&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="3-9第四场编程题："><a href="#3-9第四场编程题：" class="headerlink" title="3.9第四场编程题："></a>3.9第四场编程题：</h1><p>1.输入销售额，若销售额小于等于10000，奖金为销售额，</p>
+<p>若销售额大于10000，奖金为销售额超出的百分之8</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># <span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span>&#123;</span><br><span class="line">	<span class="type">int</span> money,reward=<span class="number">0</span>;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;请输入你的销售额\n&quot;</span>);</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;money);</span><br><span class="line">	<span class="keyword">if</span>(money&lt;=<span class="number">10000</span>)&#123;</span><br><span class="line">		reward=money;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span>&#123;</span><br><span class="line">		reward=<span class="number">10000</span>+(money<span class="number">-10000</span>)*<span class="number">0.08</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;你的奖金是%d&quot;</span>,reward);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>2.数组长度为不超过80的，输入一串，判断是否为学生号，学生号满足的要求是：前两位是2-，一共6位。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># <span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta"># <span class="keyword">include</span> <span class="string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span>&#123;</span><br><span class="line">	<span class="type">char</span> a[<span class="number">80</span>];</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;please input&quot;</span>);</span><br><span class="line">	gets(a);</span><br><span class="line">	<span class="keyword">if</span>(a[<span class="number">0</span>]==<span class="string">&#x27;2&#x27;</span>&amp;&amp;a[<span class="number">1</span>]==<span class="string">&#x27;-&#x27;</span>&amp;&amp;<span class="built_in">strlen</span>(a)==<span class="number">6</span>)&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;yes&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span>&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;no&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/03/10/%E7%AC%AC%E4%B8%80%E5%9C%BA%E7%BC%96%E7%A8%8B%E9%A2%98/" data-id="cl0qcccsx0004rsur7wl7fhro" data-title="" class="article-share-link">Share</a>
       
       
       
@@ -196,6 +359,18 @@
         
           <li>
             <a href="/2022/03/13/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/11/%E8%AF%95%E9%A2%98%20F%20%E7%89%B9%E5%88%AB%E6%95%B0%E7%9A%84%E5%92%8C/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/10/3%E6%9C%8810%E6%97%A5%E7%BC%96%E7%A8%8B%E9%A2%98/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/10/%E7%AC%AC%E4%B8%80%E5%9C%BA%E7%BC%96%E7%A8%8B%E9%A2%98/">(no title)</a>
           </li>
         
       </ul>

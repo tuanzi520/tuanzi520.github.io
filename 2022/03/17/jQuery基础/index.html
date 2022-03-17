@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     
+    <meta charset="UTF-8">
+    <title>jQuery基础 - Hexo</title>
+    <link rel="shortcut icon" href="/static/img/icon.png">
+    <link rel="icon" href="/static/img/icon.png" sizes="192x192"/>
+    
+<link rel="stylesheet" href="/static/kico.css">
+<link rel="stylesheet" href="/static/hingle.css">
+
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome/css/font-awesome.min.css">
+
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1"/>
+    <meta property="og:site_name" content="Hexo">
+    <meta property="og:title" content="jQuery基础"/>
+    
+    <style>body:before{ content: ''; background-image: url(https://api.paugram.com/wallpaper?source=gh) }</style>
+    
+<meta name="generator" content="Hexo 6.1.0"></head>
+
+  <body>
+    <header>
+    <div class="head-title">
+        <h4>Hexo</h4>
+    </div>
+    <div class="head-action">
+        <div class="toggle-btn"></div>
+        <div class="light-btn"></div>
+        <div class="search-btn"></div>
+    </div>
+    <form class="head-search" method="post">
+        <input type="text" name="s" placeholder="搜索什么？">
+    </form>
+    <nav class="head-menu">
+        <a href="/">首页</a>
+        <div class="has-child">
+            <a>分类</a>
+            <div class="sub-menu">
+                
+            </div>
+        </div>
+        
+            <a href="/about">关于我</a>
+        
+            <a href="/friends">朋友们</a>
+        
+    </nav>
+</header>
+
+    <main>
+    <div class="wrap min">
+        <section class="post-title">
+            <h2>jQuery基础</h2>
+            <div class="post-meta">
+                <time class="date">2022.03.17</time>
+            
+            </div>
+        </section>
+        <article class="post-content">
+        
+            <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h1 id="jquery概念："><a href="#jquery概念：" class="headerlink" title="jquery概念："></a>jquery概念：</h1><p>​                    jQuery说白了就是JavaScript的一个升级版，js中我们一般使用的都是属性，<br>​                而jQuery中将这些属性写成了方法。<br>​                jQuery时写的比较少，更精确；jQuery中都是方法，没有属性。<br>​                jQuery的安装：<br>​                    将jQuery函数库引入当前文档中，就相当于创建了jQuery<br>​                jQuery语法：<br>​                    $(selector).action();<br>​                    $表示jQuery的意思，如果你不想写$，你可以写成jQuery<br>​                    selector：选择器的意思，和CSS选择器一样<br>​                    action:需要执行的函数<br>​                jQuery的文档就绪事件：<br>​                    我们要将所有的jQuery代码写在文档就绪事件中，<br>​                这样文档加载完毕以后，就可以直接运行事件中的代码。<br>​                这样的话就避免了文档没有完全加载之前就运行函数，操作可能失败。<br>​                jQuery的具体使用步骤：<br>​                    1.创建项目，创建js文件夹<br>​                    2.将下载的jQuery包复制粘贴到js文件夹中<br>​                    3.创建html|jsp文档，使用标签将jQuery引入页面（创建jQuery）<br>​                    4.文档就绪事件（在文档就绪事件中写具体的实现）</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span> /&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">		<span class="comment">&lt;!--引入jQuery函数库--&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span> <span class="attr">language</span>=<span class="string">&quot;JavaScript&quot;</span> <span class="attr">src</span>=<span class="string">&quot;js/jquery-1.11.3.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">		   <span class="comment">//第一种</span></span></span><br><span class="line"><span class="language-javascript">		   $(<span class="variable language_">document</span>).<span class="title function_">ready</span>(<span class="keyword">function</span>(<span class="params"></span>)&#123;</span></span><br><span class="line"><span class="language-javascript">			   <span class="title function_">alert</span>(<span class="string">&#x27;文档就绪事件&#x27;</span>);</span></span><br><span class="line"><span class="language-javascript">		   &#125;);</span></span><br><span class="line"><span class="language-javascript">		   <span class="comment">//第二种</span></span></span><br><span class="line"><span class="language-javascript">		   $(<span class="keyword">function</span>(<span class="params"></span>)&#123;</span></span><br><span class="line"><span class="language-javascript">			   <span class="title function_">alert</span>(<span class="string">&#x27;文档就绪事件123&#x27;</span>);</span></span><br><span class="line"><span class="language-javascript">		   &#125;);</span></span><br><span class="line"><span class="language-javascript">		</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">		</span><br><span class="line">	<span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h1 id="jQuery选泽器"><a href="#jQuery选泽器" class="headerlink" title="jQuery选泽器"></a>jQuery选泽器</h1><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span></span><br><span class="line">		<span class="comment">&lt;!--引入jQuery函数库--&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span> <span class="attr">language</span>=<span class="string">&quot;JavaScript&quot;</span> <span class="attr">src</span>=<span class="string">&quot;js/jquery-1.11.3.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">			<span class="comment">//文档就绪事件</span></span></span><br><span class="line"><span class="language-javascript">			$(<span class="keyword">function</span>(<span class="params"></span>)&#123;</span></span><br><span class="line"><span class="language-javascript">				<span class="comment">//根据指定的id将指定的按钮选择出来，然后触发点击事件</span></span></span><br><span class="line"><span class="language-javascript">				$(<span class="string">&quot;#btn1&quot;</span>).<span class="title function_">click</span>(<span class="keyword">function</span>(<span class="params"></span>)&#123;</span></span><br><span class="line"><span class="language-javascript">					<span class="comment">//当点击按钮时执行此函数，改变元素的背景颜色</span></span></span><br><span class="line"><span class="language-javascript">					$(<span class="string">&quot;#one&quot;</span>).<span class="title function_">css</span>(<span class="string">&quot;background&quot;</span>,<span class="string">&quot;#0000FF&quot;</span>);</span></span><br><span class="line"><span class="language-javascript">				&#125;);</span></span><br><span class="line"><span class="language-javascript">				$(<span class="keyword">function</span>(<span class="params"></span>)&#123;</span></span><br><span class="line"><span class="language-javascript">					$(<span class="string">&quot;#btn2&quot;</span>).<span class="title function_">click</span>(<span class="keyword">function</span>(<span class="params"></span>)&#123;</span></span><br><span class="line"><span class="language-javascript">						$(<span class="string">&quot;.mini&quot;</span>).<span class="title function_">css</span>(<span class="string">&quot;background&quot;</span>,<span class="string">&quot;#FF0033&quot;</span>);</span></span><br><span class="line"><span class="language-javascript">					&#125;)</span></span><br><span class="line"><span class="language-javascript">				&#125;);</span></span><br><span class="line"><span class="language-javascript">				$(<span class="keyword">function</span>(<span class="params"></span>)&#123;</span></span><br><span class="line"><span class="language-javascript">					$(<span class="string">&quot;#btn3&quot;</span>).<span class="title function_">click</span>(<span class="keyword">function</span>(<span class="params"></span>)&#123;</span></span><br><span class="line"><span class="language-javascript">						$(<span class="string">&quot;div&quot;</span>).<span class="title function_">css</span>(<span class="string">&quot;background&quot;</span>,<span class="string">&quot;#00FFFF&quot;</span>);</span></span><br><span class="line"><span class="language-javascript">					&#125;)</span></span><br><span class="line"><span class="language-javascript">				&#125;);</span></span><br><span class="line"><span class="language-javascript">				$(<span class="keyword">function</span>(<span class="params"></span>)&#123;</span></span><br><span class="line"><span class="language-javascript">					$(<span class="string">&quot;#btn4&quot;</span>).<span class="title function_">click</span>(<span class="keyword">function</span>(<span class="params"></span>)&#123;</span></span><br><span class="line"><span class="language-javascript">						$(<span class="string">&quot;*&quot;</span>).<span class="title function_">css</span>(<span class="string">&quot;background&quot;</span>,<span class="string">&quot;#00FF33&quot;</span>);</span></span><br><span class="line"><span class="language-javascript">					&#125;)</span></span><br><span class="line"><span class="language-javascript">				&#125;);</span></span><br><span class="line"><span class="language-javascript">				$(<span class="keyword">function</span>(<span class="params"></span>)&#123;</span></span><br><span class="line"><span class="language-javascript">					$(<span class="string">&quot;#btn5&quot;</span>).<span class="title function_">click</span>(<span class="keyword">function</span>(<span class="params"></span>)&#123;</span></span><br><span class="line"><span class="language-javascript">						$(<span class="string">&quot;#stwo&quot;</span>).<span class="title function_">css</span>(<span class="string">&quot;background&quot;</span>,<span class="string">&quot;#3399FF&quot;</span>);</span></span><br><span class="line"><span class="language-javascript">					&#125;)</span></span><br><span class="line"><span class="language-javascript">				&#125;);</span></span><br><span class="line"><span class="language-javascript">				</span></span><br><span class="line"><span class="language-javascript">			&#125;);</span></span><br><span class="line"><span class="language-javascript">		</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;one&quot;</span> <span class="attr">class</span>=<span class="string">&quot;mini&quot;</span> <span class="attr">style</span>=<span class="string">&quot;width: 50px; height: 80px; border: 1px solid black;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;two&quot;</span> <span class="attr">style</span>=<span class="string">&quot;width: 200px; height: 150px; border: 1px solid black;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;three&quot;</span> <span class="attr">class</span>=<span class="string">&quot;mini&quot;</span> <span class="attr">style</span>=<span class="string">&quot;width: 50px; height: 80px; border: 1px solid black;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">&quot;sone&quot;</span>&gt;</span>span one<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">&quot;stwo&quot;</span>&gt;</span>span two<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">button</span> <span class="attr">id</span>=<span class="string">&quot;btn1&quot;</span>&gt;</span>改变id为one的意思的背景颜色为#0000FF<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">button</span> <span class="attr">id</span>=<span class="string">&quot;btn2&quot;</span>&gt;</span>改变class为mini的所有元素的背景色为#FF0033<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">button</span> <span class="attr">id</span>=<span class="string">&quot;btn3&quot;</span>&gt;</span>改变div的背景色为#00FFFF<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">button</span> <span class="attr">id</span>=<span class="string">&quot;btn4&quot;</span>&gt;</span>改变所有元素的背景色为#00FF33<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">button</span> <span class="attr">id</span>=<span class="string">&quot;btn5&quot;</span>&gt;</span>改变span为id为two的所有元素的背景色为#3399FF<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+        </article>
+        <section class="post-near">
+            <ul>
+                
+                    <li>上一篇: 看完啦 (つд⊂)</li>
+                
+                
+                    <li>下一篇: <a href="/2022/03/15/C%E5%A4%8D%E7%9B%98/"></a></li>
+                
+            </ul>
+        </section>
+        
+    
+        <section class="post-author">
+        
+            <figure class="author-avatar">
+                <img src="https://sdn.geekzu.org/avatar/d22eb460ecab37fcd7205e6a3c55c228?s=200&r=X&d=" alt="Hingle" />
+            </figure>
+        
+            <div class="author-info">
+                <h4>Hingle</h4>
+                <p>请在这里设置你的作者信息</p>
+            </div>
+        </section>
+    
+    </div>
+</main>
+
+    <footer>
+    <div class="buttons">
+        <a class="to-top" href="#"></a>
+    </div>
+    <div class="wrap min">
+        <section class="widget">
+            <div class="row">
+                <div class="col-m-4">
+                    <h3 class="title-recent">最新文章：</h3>
+                    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2022/03/17/jQuery%E5%9F%BA%E7%A1%80/">jQuery基础</a></li><li class="post-list-item"><a class="post-list-link" href="/2022/03/15/C%E5%A4%8D%E7%9B%98/">C复盘</a></li><li class="post-list-item"><a class="post-list-link" href="/2022/03/15/Dev%20C++6.0%E8%A7%A3%E5%86%B3%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98%E6%96%B9%E6%B3%95/">Dev C++6.0解决中文乱码问题方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2022/03/13/hello-world/">Hello World</a></li><li class="post-list-item"><a class="post-list-link" href="/2022/03/11/%E8%AF%95%E9%A2%98%20F%20%E7%89%B9%E5%88%AB%E6%95%B0%E7%9A%84%E5%92%8C/">试题 F 特别数的和</a></li><li class="post-list-item"><a class="post-list-link" href="/2022/03/10/3.10%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF%E7%BC%96%E7%A8%8B%E9%A2%98/">3.10网络技术编程题</a></li></ul>
+                </div>
+                <div class="col-m-4">
+                    <h3 class="title-date">时光机：</h3>
+                    <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">March 2022</a></li></ul>
+                </div>
+                <div class="col-m-4">
+                    <h3 class="title-tags">标签云：</h3>
+                    
+                </div>
+            </div>
+        </section>
+        <section class="sub-footer">
+            <p>© 2022 <a href="/">Hexo</a>. All Rights Reserved. Theme By <a href="https://github.com/Dreamer-Paul/Hingle" target="_blank" rel="nofollow">Hingle</a>.</p>
+        </section>
+    </div>
+</footer>
+
+
+<script src="/static/kico.js"></script>
+<script src="/static/hingle.js"></script>
+
+
+<script>var hingle = new Paul_Hingle({"copyright":true,"night":true});</script>
+
+  </body>
+</html>

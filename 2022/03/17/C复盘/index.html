@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     
+    <meta charset="UTF-8">
+    <title>没有标题 - Hexo</title>
+    <link rel="shortcut icon" href="/static/img/icon.png">
+    <link rel="icon" href="/static/img/icon.png" sizes="192x192"/>
+    
+<link rel="stylesheet" href="/static/kico.css">
+<link rel="stylesheet" href="/static/hingle.css">
+
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome/css/font-awesome.min.css">
+
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1"/>
+    <meta property="og:site_name" content="Hexo">
+    <meta property="og:title" content=""/>
+    
+    <style>body:before{ content: ''; background-image: url(https://api.paugram.com/wallpaper?source=gh) }</style>
+    
+<meta name="generator" content="Hexo 6.1.0"></head>
+
+  <body>
+    <header>
+    <div class="head-title">
+        <h4>Hexo</h4>
+    </div>
+    <div class="head-action">
+        <div class="toggle-btn"></div>
+        <div class="light-btn"></div>
+        <div class="search-btn"></div>
+    </div>
+    <form class="head-search" method="post">
+        <input type="text" name="s" placeholder="搜索什么？">
+    </form>
+    <nav class="head-menu">
+        <a href="/">首页</a>
+        <div class="has-child">
+            <a>分类</a>
+            <div class="sub-menu">
+                
+            </div>
+        </div>
+        
+            <a href="/about">关于我</a>
+        
+            <a href="/friends">朋友们</a>
+        
+    </nav>
+</header>
+
+    <main>
+    <div class="wrap min">
+        <section class="post-title">
+            <h2>没有标题的文章</h2>
+            <div class="post-meta">
+                <time class="date">2022.03.17</time>
+            
+            </div>
+        </section>
+        <article class="post-content">
+        
+            <p>title: C语言知识点复盘</p>
+<p>\1.  第一步，# include &lt;stdio.h&gt;确保字母不要写错</p>
+<p>\2.  定义变量 </p>
+<p>int 整数类型</p>
+<p> float 单精度</p>
+<p>double 双精度</p>
+<p>\3.  printf(“haha”);</p>
+<p>用于为用户提示信息</p>
+<p>\4.  输出变量的值？</p>
+<p>整型（1,2,3）</p>
+<p>int a&#x3D;2;</p>
+<p>printf(“%d”,a);</p>
+<p>Int a&#x3D;4,b&#x3D;8;</p>
+<p>printf(“%d%d”,a,b);</p>
+<p>浮点型的输出</p>
+<p>float a&#x3D;2.4;</p>
+<p>printf(“%f”,a);</p>
+<p>float a&#x3D;3.4,b&#x3D;5.6;</p>
+<p>printf(“%f%f”,a,b);</p>
+<p>输入</p>
+<p>int a,b;&#x2F;&#x2F;输入之前先要开辟</p>
+<p>scanf(“%d”,&amp;a);</p>
+<p>scanf(“%d%d”,&amp;a,&amp;b);我自己输入的时候要加空格隔开</p>
+<p>scanf(“%d,%d”,&amp;a,&amp;b);我自己输入的时候要加逗号隔开</p>
+<p>顺序结构</p>
+<p>\1.  求和</p>
+<p>我们两个数，我们想，肯定要定义3个变量，三个变量中，有两个是要相加的，另一个是装他们相加的值。最后通过printf为用户输出到屏幕上。</p>
+<p><img src="file:///C:/Users/毛团团/AppData/Local/Temp/msohtmlclip1/01/clip_image002.gif" alt="img"></p>
+<p>\2.  求平均值</p>
+<p>平均值可能出现小数，所以平均值我们应该定义成float类型，其他正常输入输出即可，我们最后通过printf将平均值输出。该题也是定义三个变量。</p>
+<p><img src="file:///C:/Users/毛团团/AppData/Local/Temp/msohtmlclip1/01/clip_image004.gif" alt="img"></p>
+<p>\3.  交换2个数</p>
+<p>需要使用3个变量，因为两个变量之间会有值被覆盖，无法进行交换，交换的过程，</p>
+<p>假设交换a和b的值，首先我们定义一个第三个变量，第三个变量存我们a的值，然后将b的值赋给a,第三方变量的值给b，最后</p>
+<p>Int a&#x3D;2,b&#x3D;3,t&#x3D;0;</p>
+<p>t&#x3D;a;a&#x3D;b;b&#x3D;t;</p>
+<p>如何记忆？交换的放中间，谁和谁交换，然后以接龙的方式。</p>
+<p><img src="file:///C:/Users/毛团团/AppData/Local/Temp/msohtmlclip1/01/clip_image006.gif" alt="img"></p>
+<p>\4.  分解数值</p>
+<p>例如：任意输入三个数，实现个位十位百位的分解操作</p>
+<p><img src="file:///C:/Users/毛团团/AppData/Local/Temp/msohtmlclip1/01/clip_image008.jpg" alt="img"></p>
+<p>\1.  三个数比较大小</p>
+<p><img src="file:///C:/Users/毛团团/AppData/Local/Temp/msohtmlclip1/01/clip_image010.jpg" alt="img"></p>
+<p>分支结构</p>
+<p>单分支结构</p>
+<p>if （判断表达式）</p>
+<p>{</p>
+<p>  执行语句集合</p>
+<p>}</p>
+<p>后续执行语句</p>
+<p>当我们的条件满足的时候，我们执行大括号内的内容。</p>
+<p>双分支结构</p>
+<p>if(判断表达式){</p>
+<p>执行语句集合1;</p>
+<p>}</p>
+<p>else{</p>
+<p>执行语句集合2;</p>
+<p>}</p>
+<p>后续语句</p>
+<p>满足条件时，执行内容1，满足与条件相反的条件时，执行内容2。</p>
+<p>多分支</p>
+<p><img src="file:///C:/Users/毛团团/AppData/Local/Temp/msohtmlclip1/01/clip_image012.gif" alt="img"></p>
+<p>满足哪个条件，执行哪个条件后面的括号里内容。上述都不满足，我们执行最后一个的else后的内容。</p>
+<p>例题：</p>
+<p>判断由键盘输入的字符是数字，大写，小写，还是其他字符</p>
+<p><img src="file:///C:/Users/毛团团/AppData/Local/Temp/msohtmlclip1/01/clip_image014.gif" alt="img"></p>
+<p>if的嵌套使用</p>
+<p>if(条件1){</p>
+<p>if(条件2){</p>
+<p>内容1;</p>
+<p>}</p>
+<p>Else{</p>
+<p>内容2;</p>
+<p>}</p>
+<p>Else{</p>
+<p>内容3;</p>
+<p>}</p>
+<p>}</p>
+<p>当满足条件1的情况下，我们才会执行里面的小if else;</p>
+<p>当条件1不满足时，我们执行内容3；</p>
+<p>三目运算符</p>
+<p><img src="file:///C:/Users/毛团团/AppData/Local/Temp/msohtmlclip1/01/clip_image016.gif" alt="img"></p>
+<p>如果a&lt;b为真执行冒号前面的，为假执行冒号后面的。</p>
+<p>Switch case</p>
+<p><img src="file:///C:/Users/毛团团/AppData/Local/Temp/msohtmlclip1/01/clip_image018.gif" alt="img"></p>
+<p>典型；例题，求分数与等级；</p>
+<p><img src="file:///C:/Users/毛团团/AppData/Local/Temp/msohtmlclip1/01/clip_image020.gif" alt="876fdccc230c8ce2aa2b6777a835ded"></p>
+<p><img src="file:///C:/Users/毛团团/AppData/Local/Temp/msohtmlclip1/01/clip_image022.gif" alt="img"></p>
+<p>while 循环</p>
+<p><img src="file:///C:/Users/毛团团/AppData/Local/Temp/msohtmlclip1/01/clip_image024.gif" alt="img"></p>
+<p>当条件满足的时候，执行括号里内容，什么时候停止？当条件不满足时，停止循环。</p>
+<p><img src="file:///C:/Users/毛团团/AppData/Local/Temp/msohtmlclip1/01/clip_image026.gif" alt="img"></p>
+<p>do while</p>
+<p>do while 本质上和while没有什么区别，只不过他把循环体放上面了。</p>
+<p>所以他循环体的内容最少执行一次。</p>
+<p><img src="file:///C:/Users/毛团团/AppData/Local/Temp/msohtmlclip1/01/clip_image028.gif" alt="img"></p>
+<p>do{</p>
+<p>循环体内容</p>
+<p>}</p>
+<p>While(条件);</p>
+<p>for循环</p>
+<p>for循环，我们使用的for循环中变量要先定义，</p>
+<p>int i,sum&#x3D;0;</p>
+<p>for(i&#x3D;1;i&lt;&#x3D;100;i++){</p>
+<p>sum&#x3D;sum+i;</p>
+<p>}</p>
+<p>执行过程：因为我是1+2+3+…+100;</p>
+<p>我先要块地，来放最后的值。</p>
+<p>所以我肯定要定义个变量来接收。</p>
+<p>然后i通过for循环，i的变化是1,2,3,4…100</p>
+<p>因为我们一次只蹦跶一个。</p>
+<p><img src="file:///C:/Users/毛团团/AppData/Local/Temp/msohtmlclip1/01/clip_image030.gif" alt="img"></p>
+<p>如果我们需要一次蹦跶2个，比如求奇数和或者偶数和的时候，我们只需要修改第三个位置</p>
+<p>将原来的i++改成i&#x3D;i+2;或者i+&#x3D;2;这两个表达的意思是一样的，都是实现i蹦跶两个。</p>
+<p>我们还可以在for循环里添加一些判断条件，比如我们以前遇到过的整除问题</p>
+<p>我们还可以在for循环里添加小for循环，比如打印星星问题，输出几排几列的星星。</p>
+<p><img src="file:///C:/Users/毛团团/AppData/Local/Temp/msohtmlclip1/01/clip_image032.gif" alt="img"></p>
+<p><img src="file:///C:/Users/毛团团/AppData/Local/Temp/msohtmlclip1/01/clip_image034.gif" alt="img"></p>
+<p><img src="file:///C:/Users/毛团团/AppData/Local/Temp/msohtmlclip1/01/clip_image036.gif" alt="img"></p>
+<p>数组：</p>
+<p>一维数组，二维数组</p>
+<p>一维数组：如何定义？如何初始化？如何去某一个位置的值？如何通过键盘输入，像数组中添加元素，我们这时候就需要用到for循环了， for循环＋scanf这里是使用一层for循环。如何通过for循环输出数组中的元素？For循环+printf</p>
+<p><img src="file:///C:/Users/毛团团/AppData/Local/Temp/msohtmlclip1/01/clip_image038.gif" alt="img"></p>
+<p><img src="file:///C:/Users/毛团团/AppData/Local/Temp/msohtmlclip1/01/clip_image040.gif" alt="73251cca536c6bf13b2687150191402"></p>
+<p>二维数组：如何定义？如何初始化？如何去某一个位置的值？如何通过键盘输入，像数组中添加元素，我们这时候就需要用到for循环了，这里是使用一层for循环。</p>
+<p><img src="file:///C:/Users/毛团团/AppData/Local/Temp/msohtmlclip1/01/clip_image042.gif" alt="91303d106bf3f473a1636e7bffbc5c8"></p>
+<p><img src="file:///C:/Users/毛团团/AppData/Local/Temp/msohtmlclip1/01/clip_image044.gif" alt="img"></p>
+<p>函数：</p>
+<p>注意函数的格式</p>
+<p>首先我们要声明</p>
+<p>Int max（int a,int b）;</p>
+<p>这个作用告诉计算机我有这么一个函数你以后会用到，不写的话，计算机不认识他，你是谁啊？就会报错。</p>
+<p>然后我们自己定义函数</p>
+<p>Int max(int a,int b){</p>
+<p>Int sum;</p>
+<p>函数体内容；</p>
+<p>Return sum;</p>
+<p>}</p>
+<p>函数体内容，具体就是对你穿过来的东西进行操作，也就是a和b，对你们操作完，ok,我扔给你个东西，return 给你,</p>
+<p>我们需要使用函数的功能时，由于函数他会扔个你个东西，所以你在使用函数以前，需要先向计算机要块地，来存放你函数给我的东西。调用的方式是：</p>
+<p>Int a;</p>
+<p>a&#x3D;max(b,c);</p>
+<p>这里的b,c是真实的值，扔给函数，进行操作。</p>
+<p><img src="file:///C:/Users/毛团团/AppData/Local/Temp/msohtmlclip1/01/clip_image046.gif" alt="a03585178c61762f52c312d50681153"></p>
+<p>C语言必备单词</p>
+<p><img src="file:///C:/Users/毛团团/AppData/Local/Temp/msohtmlclip1/01/clip_image048.gif" alt="15278ad559b457b76e778ecdaf416af"></p>
+<p><strong>从键盘上输入一个小写字母，把它转变为大写字母再输出。</strong></p>
+<p><img src="file:///C:/Users/毛团团/AppData/Local/Temp/msohtmlclip1/01/clip_image050.gif" alt="img"></p>
+<p>如何实现小写转大写？</p>
+<p>首先我们定义一个字符型变量去接收，</p>
+<p>大写小写之间转化是通过上述方式转化，具体看一看他们之间相差的assic码值。</p>
+<p><strong>让用户从键盘输入一个年份，判断该年份是否是闰年。判断闰年的条件是：年份被4整除不能被100整除，或者被400整除</strong></p>
+<p><img src="file:///C:/Users/毛团团/AppData/Local/Temp/msohtmlclip1/01/clip_image052.gif" alt="img"></p>
+<p><strong>有一个函数</strong></p>
+<p><img src="file:///C:/Users/毛团团/AppData/Local/Temp/msohtmlclip1/01/clip_image054.gif" alt="img"><img src="file:///C:/Users/毛团团/AppData/Local/Temp/msohtmlclip1/01/clip_image056.gif" alt="img"></p>
+<p><img src="file:///C:/Users/毛团团/AppData/Local/Temp/msohtmlclip1/01/clip_image058.gif" alt="img"></p>
+<p><img src="file:///C:/Users/毛团团/AppData/Local/Temp/msohtmlclip1/01/clip_image060.gif" alt="img"></p>
+<p><img src="file:///C:/Users/毛团团/AppData/Local/Temp/msohtmlclip1/01/clip_image062.gif" alt="img"></p>
+<p>我们按位拆解，再按他写的条件，用计算机语言实现即可。</p>
+
+        </article>
+        <section class="post-near">
+            <ul>
+                
+                    <li>上一篇: 看完啦 (つд⊂)</li>
+                
+                
+                    <li>下一篇: <a href="/2022/03/17/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF%E7%BC%96%E7%A8%8B%E9%A2%98/">网络技术编程题</a></li>
+                
+            </ul>
+        </section>
+        
+    
+        <section class="post-author">
+        
+            <figure class="author-avatar">
+                <img src="https://sdn.geekzu.org/avatar/d22eb460ecab37fcd7205e6a3c55c228?s=200&r=X&d=" alt="Hingle" />
+            </figure>
+        
+            <div class="author-info">
+                <h4>Hingle</h4>
+                <p>请在这里设置你的作者信息</p>
+            </div>
+        </section>
+    
+    </div>
+</main>
+
+    <footer>
+    <div class="buttons">
+        <a class="to-top" href="#"></a>
+    </div>
+    <div class="wrap min">
+        <section class="widget">
+            <div class="row">
+                <div class="col-m-4">
+                    <h3 class="title-recent">最新文章：</h3>
+                    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2022/03/17/C%E5%A4%8D%E7%9B%98/">C复盘</a></li><li class="post-list-item"><a class="post-list-link" href="/2022/03/17/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF%E7%BC%96%E7%A8%8B%E9%A2%98/">网络技术编程题</a></li><li class="post-list-item"><a class="post-list-link" href="/2022/03/17/javascript/">javascript</a></li><li class="post-list-item"><a class="post-list-link" href="/2022/03/17/jQuery%E5%9F%BA%E7%A1%80/">jQuery基础</a></li><li class="post-list-item"><a class="post-list-link" href="/2022/03/13/hello-world/">Hello World</a></li><li class="post-list-item"><a class="post-list-link" href="/2022/03/11/%E8%AF%95%E9%A2%98%20F%20%E7%89%B9%E5%88%AB%E6%95%B0%E7%9A%84%E5%92%8C/">试题 F 特别数的和</a></li></ul>
+                </div>
+                <div class="col-m-4">
+                    <h3 class="title-date">时光机：</h3>
+                    <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">March 2022</a></li></ul>
+                </div>
+                <div class="col-m-4">
+                    <h3 class="title-tags">标签云：</h3>
+                    
+                </div>
+            </div>
+        </section>
+        <section class="sub-footer">
+            <p>© 2022 <a href="/">Hexo</a>. All Rights Reserved. Theme By <a href="https://github.com/Dreamer-Paul/Hingle" target="_blank" rel="nofollow">Hingle</a>.</p>
+        </section>
+    </div>
+</footer>
+
+
+<script src="/static/kico.js"></script>
+<script src="/static/hingle.js"></script>
+
+
+<script>var hingle = new Paul_Hingle({"copyright":true,"night":true});</script>
+
+  </body>
+</html>

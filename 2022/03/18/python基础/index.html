@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     
+    <meta charset="UTF-8">
+    <title>python基础 - Hexo</title>
+    <link rel="shortcut icon" href="/static/img/icon.png">
+    <link rel="icon" href="/static/img/icon.png" sizes="192x192"/>
+    
+<link rel="stylesheet" href="/static/kico.css">
+<link rel="stylesheet" href="/static/hingle.css">
+
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome/css/font-awesome.min.css">
+
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1"/>
+    <meta property="og:site_name" content="Hexo">
+    <meta property="og:title" content="python基础"/>
+    
+    <style>body:before{ content: ''; background-image: url(https://api.paugram.com/wallpaper?source=gh) }</style>
+    
+<meta name="generator" content="Hexo 6.1.0"></head>
+
+  <body>
+    <header>
+    <div class="head-title">
+        <h4>Hexo</h4>
+    </div>
+    <div class="head-action">
+        <div class="toggle-btn"></div>
+        <div class="light-btn"></div>
+        <div class="search-btn"></div>
+    </div>
+    <form class="head-search" method="post">
+        <input type="text" name="s" placeholder="搜索什么？">
+    </form>
+    <nav class="head-menu">
+        <a href="/">首页</a>
+        <div class="has-child">
+            <a>分类</a>
+            <div class="sub-menu">
+                
+            </div>
+        </div>
+        
+            <a href="/about">关于我</a>
+        
+            <a href="/friends">朋友们</a>
+        
+    </nav>
+</header>
+
+    <main>
+    <div class="wrap min">
+        <section class="post-title">
+            <h2>python基础</h2>
+            <div class="post-meta">
+                <time class="date">2022.03.18</time>
+            
+            </div>
+        </section>
+        <article class="post-content">
+        
+            <h1 id="python的基本输入输出"><a href="#python的基本输入输出" class="headerlink" title="python的基本输入输出"></a>python的基本输入输出</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">a=<span class="number">10</span></span><br><span class="line"><span class="built_in">print</span>(a)</span><br><span class="line">password =<span class="built_in">input</span>(<span class="string">&quot;请输入密码&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;您输入的密码是&quot;</span>,password)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">a=<span class="string">&quot;abc&quot;</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(a))</span><br></pre></td></tr></table></figure>
+
+<p>这个是来判断输入的类型是什么强制类型转换</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a=<span class="built_in">int</span>(<span class="string">&quot;123&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(a)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(a))</span><br></pre></td></tr></table></figure>
+
+<p>格式化输出</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">age = <span class="number">10</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;我今年%d岁&quot;</span>%age)</span><br></pre></td></tr></table></figure>
+
+<h1 id="python条件判断4种"><a href="#python条件判断4种" class="headerlink" title="python条件判断4种"></a>python条件判断4种</h1><p>代码的缩进为一个tab键，或者4个空格</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> age&gt;=<span class="number">18</span>:</span><br><span class="line"><span class="built_in">print</span> <span class="string">&quot;你可以上大学了&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>if后面条件为真 执行后面的语句</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> xxx:</span><br><span class="line"><span class="built_in">print</span> (<span class="string">&quot;1&quot;</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line"><span class="built_in">print</span> (<span class="string">&quot;2&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>if后面条件为真，执行1</p>
+<p>为假执行2</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">score = <span class="number">89</span></span><br><span class="line"><span class="keyword">if</span> score&gt;=<span class="number">90</span> <span class="keyword">and</span> score&lt;=<span class="number">100</span>:</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;本次考试，等级为A&#x27;</span>)</span><br><span class="line"><span class="keyword">elif</span> score&gt;=<span class="number">80</span> <span class="keyword">and</span> score&lt;<span class="number">90</span>:</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;本次考试，等级为B&#x27;</span>)</span><br><span class="line"><span class="keyword">elif</span> score&gt;=<span class="number">70</span> <span class="keyword">and</span> score&lt;<span class="number">80</span>:</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;本次考试，等级为C&#x27;</span>)</span><br><span class="line"><span class="keyword">elif</span> score&gt;=<span class="number">60</span> <span class="keyword">and</span> score&lt;<span class="number">70</span>:</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;本次考试，等级为D&#x27;</span>)</span><br><span class="line"><span class="comment">#elif score&gt;=0 and score&lt;60:</span></span><br><span class="line"><span class="keyword">else</span>: </span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;本次考试，等级为E&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>多分支语句</p>
+<p>if嵌套</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">if 条件1:</span><br><span class="line">满足条件1 做的事情1</span><br><span class="line">满足条件1 做的事情2</span><br><span class="line">if 条件2:</span><br><span class="line">满足条件2 做的事情1</span><br><span class="line">满足条件2 做的事情2</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h1 id="python生成随机数"><a href="#python生成随机数" class="headerlink" title="python生成随机数"></a>python生成随机数</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">import  random</span><br><span class="line">b=random.randint(2,10)</span><br><span class="line">print(b)</span><br></pre></td></tr></table></figure>
+
+<p>生成2到10的随机数</p>
+<h1 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h1><p>for 临时变量 in 列表或者字符串等: </p>
+<p>循环满足条件时执行的代码</p>
+<h1 id="while-循环"><a href="#while-循环" class="headerlink" title="while 循环"></a>while 循环</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">i = 0</span><br><span class="line">while i&lt;100:</span><br><span class="line">print(&quot;i=%d&quot;%i)</span><br><span class="line">i+=1</span><br></pre></td></tr></table></figure>
+
+<h1 id="break-continue"><a href="#break-continue" class="headerlink" title="break continue"></a>break continue</h1><p>break跳出所有循环</p>
+<p>continue跳出当前循环</p>
+<h1 id="Python字符串"><a href="#Python字符串" class="headerlink" title="Python字符串"></a>Python字符串</h1><p>python中的字符串可以用单引号，也可以用双引号包起来</p>
+<p>如果字符串里有单引号，我们用双引号包起来，同理，用单引号包起来</p>
+<h1 id="Python列表"><a href="#Python列表" class="headerlink" title="Python列表"></a>Python列表</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">namesList = [<span class="string">&#x27;xiaoWang&#x27;</span>,<span class="string">&#x27;xiaoZhang&#x27;</span>,<span class="string">&#x27;xiaoHua&#x27;</span>]</span><br><span class="line">testList = [<span class="number">1</span>, <span class="string">&#x27;a&#x27;</span>]</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>python中的列表可以存储不同类型元素</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">namesList = [<span class="string">&#x27;xiaoWang&#x27;</span>,<span class="string">&#x27;xiaoZhang&#x27;</span>,<span class="string">&#x27;xiaoHua&#x27;</span>]</span><br><span class="line"><span class="keyword">for</span> name <span class="keyword">in</span> namesList:</span><br><span class="line"><span class="built_in">print</span>(name)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>我们通过循环可以把里面的元素输出出来</p>
+
+        </article>
+        <section class="post-near">
+            <ul>
+                
+                    <li>上一篇: <a href="/2022/03/18/%E8%93%9D%E6%A1%A5%E6%9D%AF%E7%AE%97%E6%B3%95/">蓝桥杯算法</a></li>
+                
+                
+                    <li>下一篇: <a href="/2022/03/17/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF%E7%BC%96%E7%A8%8B%E9%A2%98/">网络技术编程题</a></li>
+                
+            </ul>
+        </section>
+        
+    
+        <section class="post-author">
+        
+            <figure class="author-avatar">
+                <img src="https://sdn.geekzu.org/avatar/d22eb460ecab37fcd7205e6a3c55c228?s=200&r=X&d=" alt="团子" />
+            </figure>
+        
+            <div class="author-info">
+                <h4>团子</h4>
+                <p>记录日常学习笔记</p>
+            </div>
+        </section>
+    
+    </div>
+</main>
+
+    <footer>
+    <div class="buttons">
+        <a class="to-top" href="#"></a>
+    </div>
+    <div class="wrap min">
+        <section class="widget">
+            <div class="row">
+                <div class="col-m-4">
+                    <h3 class="title-recent">最新文章：</h3>
+                    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2022/03/18/660%E5%A4%8D%E7%9B%98/">660复盘</a></li><li class="post-list-item"><a class="post-list-link" href="/2022/03/18/%E8%93%9D%E6%A1%A5%E6%9D%AF%E7%AE%97%E6%B3%95/">蓝桥杯算法</a></li><li class="post-list-item"><a class="post-list-link" href="/2022/03/18/python%E5%9F%BA%E7%A1%80/">python基础</a></li><li class="post-list-item"><a class="post-list-link" href="/2022/03/17/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF%E7%BC%96%E7%A8%8B%E9%A2%98/">网络技术编程题</a></li><li class="post-list-item"><a class="post-list-link" href="/2022/03/17/javascript/">javascript</a></li><li class="post-list-item"><a class="post-list-link" href="/2022/03/17/jQuery%E5%9F%BA%E7%A1%80/">jQuery基础</a></li></ul>
+                </div>
+                <div class="col-m-4">
+                    <h3 class="title-date">时光机：</h3>
+                    <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">March 2022</a></li></ul>
+                </div>
+                <div class="col-m-4">
+                    <h3 class="title-tags">标签云：</h3>
+                    
+                </div>
+            </div>
+        </section>
+        <section class="sub-footer">
+            <p>© 2022 <a href="/">Hexo</a>. All Rights Reserved. Theme By <a href="https://github.com/Dreamer-Paul/Hingle" target="_blank" rel="nofollow">Hingle</a>.</p>
+        </section>
+    </div>
+</footer>
+
+
+<script src="/static/kico.js"></script>
+<script src="/static/hingle.js"></script>
+
+
+<script>var hingle = new Paul_Hingle({"copyright":true,"night":true});</script>
+
+  </body>
+</html>
